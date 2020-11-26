@@ -54,4 +54,18 @@ where data is a list of dictionarys, like:
 
 ]
 
+OR:
+```python
+sharepoint_site.lists['ListName'].delete_list_rows()
+```
+
+The list can also access its respective itens (rows) by:
+```python
+sharepoint_site.lists['ListName'].list_items
+```
+then get the list rows Ids:
+```python
+sharepoint_site.lists['ListName'].list_items.get_rows_ids()
+```
+
 
