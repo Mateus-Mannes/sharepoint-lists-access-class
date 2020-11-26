@@ -29,3 +29,28 @@ to this you need to instantiate an object to represent you site:
 ```python
 sharepoint_site = SharepointSite()
 ```
+SharepointSite() has access to all lists of type 'GenericList' of your site
+
+it can clean all the list with:
+```python
+sharepoint_site.delete_all_lists_rows()
+```
+Or access a specific list By:
+```python
+sharepoint_site.lists['ListName']
+```
+and do:
+```python
+sharepoint_site.lists['ListName'].insert_list_rows(data) 
+```
+where data is a list of dictionarys, like:
+
+[
+
+{"Column 1":"value 1", "Column 2":"Value 1"},
+
+{"Column 1":"value 2", "Column 2":"Value 2"}
+
+]
+
+
