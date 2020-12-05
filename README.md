@@ -28,6 +28,7 @@ $ set SHAREPOINT_SITE_URL="https://mysharepoint.sharepoint.com/sites/MySite"
 
 to this you need to instantiate an object to represent you site:
 ```python
+from sharepoint import SharepointSite
 sharepoint_site = SharepointSite()
 ```
 SharepointSite() has access to all lists of type 'GenericList' of your site
